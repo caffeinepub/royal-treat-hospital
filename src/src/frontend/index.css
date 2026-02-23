@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Medical blue theme - calming, trustworthy, professional */
+    --radius: 0.75rem;
+    
+    /* Base colors - soft off-white background with deep blue-gray text */
+    --background: 0.98 0.005 240;
+    --foreground: 0.25 0.02 240;
+    
+    /* Cards - clean white with subtle elevation */
+    --card: 1 0 0;
+    --card-foreground: 0.25 0.02 240;
+    
+    /* Popovers - clean white */
+    --popover: 1 0 0;
+    --popover-foreground: 0.25 0.02 240;
+    
+    /* Primary - medical blue (trustworthy, calming) */
+    --primary: 0.55 0.15 240;
+    --primary-foreground: 0.99 0 0;
+    
+    /* Secondary - soft teal accent (healing, calm) */
+    --secondary: 0.75 0.08 180;
+    --secondary-foreground: 0.25 0.02 240;
+    
+    /* Muted - light blue-gray */
+    --muted: 0.95 0.01 240;
+    --muted-foreground: 0.52 0.02 240;
+    
+    /* Accent - vibrant teal for CTAs */
+    --accent: 0.62 0.12 180;
+    --accent-foreground: 0.99 0 0;
+    
+    /* Destructive - medical red */
+    --destructive: 0.58 0.22 25;
+    --destructive-foreground: 0.99 0 0;
+    
+    /* Borders and inputs - soft blue-gray */
+    --border: 0.88 0.01 240;
+    --input: 0.88 0.01 240;
+    --ring: 0.55 0.15 240;
+    
+    /* Chart colors - medical palette */
+    --chart-1: 0.55 0.15 240;
+    --chart-2: 0.62 0.12 180;
+    --chart-3: 0.65 0.18 200;
+    --chart-4: 0.70 0.10 160;
+    --chart-5: 0.58 0.14 220;
+    
+    /* Sidebar colors */
+    --sidebar: 0.98 0.005 240;
+    --sidebar-foreground: 0.25 0.02 240;
+    --sidebar-primary: 0.55 0.15 240;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.95 0.01 240;
+    --sidebar-accent-foreground: 0.25 0.02 240;
+    --sidebar-border: 0.88 0.01 240;
+    --sidebar-ring: 0.55 0.15 240;
+  }
+
+  .dark {
+    /* Dark mode - deep navy medical theme */
+    --background: 0.18 0.03 240;
+    --foreground: 0.95 0.01 240;
+    
+    --card: 0.22 0.03 240;
+    --card-foreground: 0.95 0.01 240;
+    
+    --popover: 0.22 0.03 240;
+    --popover-foreground: 0.95 0.01 240;
+    
+    /* Primary - brighter blue for dark mode */
+    --primary: 0.68 0.18 240;
+    --primary-foreground: 0.15 0.03 240;
+    
+    /* Secondary - muted teal */
+    --secondary: 0.32 0.04 180;
+    --secondary-foreground: 0.95 0.01 240;
+    
+    --muted: 0.28 0.03 240;
+    --muted-foreground: 0.65 0.02 240;
+    
+    /* Accent - vibrant teal */
+    --accent: 0.65 0.14 180;
+    --accent-foreground: 0.15 0.03 240;
+    
+    --destructive: 0.62 0.24 25;
+    --destructive-foreground: 0.95 0.01 240;
+    
+    --border: 0.32 0.03 240;
+    --input: 0.32 0.03 240;
+    --ring: 0.68 0.18 240;
+    
+    --chart-1: 0.68 0.18 240;
+    --chart-2: 0.65 0.14 180;
+    --chart-3: 0.70 0.20 200;
+    --chart-4: 0.72 0.12 160;
+    --chart-5: 0.66 0.16 220;
+    
+    --sidebar: 0.22 0.03 240;
+    --sidebar-foreground: 0.95 0.01 240;
+    --sidebar-primary: 0.68 0.18 240;
+    --sidebar-primary-foreground: 0.15 0.03 240;
+    --sidebar-accent: 0.28 0.03 240;
+    --sidebar-accent-foreground: 0.95 0.01 240;
+    --sidebar-border: 0.32 0.03 240;
+    --sidebar-ring: 0.68 0.18 240;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+}
